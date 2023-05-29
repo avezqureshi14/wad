@@ -1,0 +1,34 @@
+
+<html>
+  <head>
+    <title>AJAX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="container" style="width: 100%">
+        <h1>Data Of User</h1>
+        <p id="name" style="margin: 0"></p>
+        <p id="gender" style="margin: 0"></p>
+        <p id="branch" style="margin: 0"></p>
+        <p id="email" style="margin: 0"></p>
+        <p id="rollno" style="margin: 0"></p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const name = localStorage.getItem('name');
+    const gender = localStorage.getItem('gender');
+    const branch = localStorage.getItem('branch');
+    const email = localStorage.getItem('email');
+    const rollno = localStorage.getItem('rollno');
+
+    document.getElementById('name').innerText = 'Name: ' + name;
+    document.getElementById('gender').innerText = 'Gender: ' + gender;
+    document.getElementById('branch').innerText = 'Branch: ' + branch;
+    document.getElementById('email').innerText = 'Email: ' + email;
+    document.getElementById('rollno').innerText = 'Roll No: ' + rollno;
+  </script>
+</html>

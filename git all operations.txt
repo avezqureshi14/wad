@@ -1,0 +1,399 @@
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form
+$ git config --global user.name Dineshbhatlawande
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form
+$ git config --global user.email dinesh766654@gmail.com
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form
+$  git config --global user.name
+Dineshbhatlawande
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form
+$ git config --global user.email
+dinesh766654@gmail.com
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form
+$ git init
+Initialized empty Git repository in C:/Users/dines/Desktop/wad/wad ass-1b reg_form/.git/
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (master)
+$ ls -lart
+total 28
+drwxr-xr-x 1 dines 197609    0 Mar 28 18:38 ../
+-rw-r--r-- 1 dines 197609  790 Apr  1 00:59 display-data.js
+-rw-r--r-- 1 dines 197609 2253 Apr  1 01:37 script.js
+-rw-r--r-- 1 dines 197609 4015 Apr  8 23:37 index.html
+-rw-r--r-- 1 dines 197609  853 Apr  8 23:38 display-data.html
+drwxr-xr-x 1 dines 197609    0 Apr 11 00:19 ./
+drwxr-xr-x 1 dines 197609    0 Apr 11 00:19 .git/
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        display-data.html
+        display-data.js
+        index.html
+        script.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (master)
+$ git add -A
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   display-data.html
+        new file:   display-data.js
+        new file:   index.html
+        new file:   script.js
+
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (master)
+$ git commit -m "my first commit"
+[master (root-commit) e7a70e6] my first commit
+ 4 files changed, 175 insertions(+)
+ create mode 100644 display-data.html
+ create mode 100644 display-data.js
+ create mode 100644 index.html
+ create mode 100644 script.js
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (master)
+$ git remote add origin https://github.com/Dineshbhatlawande/wad.git
+ 
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (master)
+$ git branch -M main
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.51 KiB | 183.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Dineshbhatlawande/wad.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git log
+commit e7a70e612896910df7171ae0d29db8301c8a09e5 (HEAD -> main, origin/main)
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 00:25:29 2023 +0530
+
+    my first commit
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (main)
+ dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        changes/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git add -A
+warning: adding embedded git repository: changes
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> changes
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached changes
+hint:
+hint: See "git help submodule" for more information.
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   changes
+
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git commit -m "second commit"
+[main c0733f7] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 160000 changes
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ cd changes/
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (main)
+$ git init
+Initialized empty Git repository in C:/Users/dines/Desktop/wad/wad ass-1b reg_form/changes/.git/
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (master)
+$ git pull https://github.com/Dineshbhatlawande/wad.git
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 9 (delta 2), reused 5 (delta 1), pack-reused 0
+Unpacking objects: 100% (9/9), 3.13 KiB | 7.00 KiB/s, done.
+From https://github.com/Dineshbhatlawande/wad
+ * branch            HEAD       -> FETCH_HEAD
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample 2.txt
+        sample1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git add -A
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git commit -m "third commit"
+[main a68aff4] third commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 sample 2.txt
+ create mode 100644 sample1.txt
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$  git remote add origin https://github.com/Dineshbhatlawande/wad.git
+error: remote origin already exists.
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$  git remote -v
+origin  https://github.com/Dineshbhatlawande/wad.git (fetch)
+origin  https://github.com/Dineshbhatlawande/wad.git (push)
+
+ 
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$  git branch -M main
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 694 bytes | 86.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Dineshbhatlawande/wad.git
+   c403c47..a68aff4  main -> main
+branch 'main' set up to track 'origin/main'.
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ cd changes/
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/dines/Desktop/wad/wad ass-1b reg_form/changes/.git/
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (master)
+$ git pull https://github.com/Dineshbhatlawande/wad.git
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 1), reused 6 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), 674 bytes | 2.00 KiB/s, done.
+From https://github.com/Dineshbhatlawande/wad
+ * branch            HEAD       -> FETCH_HEAD
+Updating c403c47..a68aff4
+Fast-forward
+ changes      | 1 +
+ sample 2.txt | 1 +
+ sample1.txt  | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 160000 changes
+ create mode 100644 sample 2.txt
+ create mode 100644 sample1.txt
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (master)
+$ git branch
+* master
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (master)
+$ git branch login
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (master)
+$ git branch
+  login
+* master
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form/changes (master)
+$ git checkout login
+Switched to branch 'login'
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (login)
+$ git status
+On branch login
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sample 2.txt
+        modified:   sample1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (login)
+$ git add -A
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (login)
+$ git commit -m "login commit"
+[login a1b56e4] login commit
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 login.txt
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (login)
+$ git push origin login
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (9/9), 915 bytes | 83.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'login' on GitHub by visiting:
+remote:      https://github.com/Dineshbhatlawande/wad/pull/new/login
+remote:
+To https://github.com/Dineshbhatlawande/wad.git
+ * [new branch]      login -> login
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (login)
+$ git checkout login
+Already on 'login'
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (login)
+$ git branch
+* login
+  main
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (login)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git merge login
+Updating 3b45d6e..a1b56e4
+Fast-forward
+ login.txt    | 1 +
+ sample 2.txt | 2 +-
+ sample1.txt  | 2 ++
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 login.txt
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Dineshbhatlawande/wad.git
+   a68aff4..a1b56e4  main -> main
+branch 'main' set up to track 'origin/main'.
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+dines@DESKTOP-8VV3T7B MINGW64 ~/Desktop/wad/wad ass-1b reg_form (main)
+$ git log
+commit a1b56e4dba589a09587834a1dcbcaf3941f55606 (HEAD -> main, origin/main, origin/login, login)
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 01:32:46 2023 +0530
+
+    login commit
+
+commit 3b45d6ebb82a9fc8190e0fb2476907b58d42a9de
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 01:28:46 2023 +0530
+
+    fourth commit
+
+commit a68aff43885c33dcc39ab32c7dfec7a211baeb3d
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 01:02:12 2023 +0530
+:...skipping...
+commit a1b56e4dba589a09587834a1dcbcaf3941f55606 (HEAD -> main, origin/main, origin/login, login)
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 01:32:46 2023 +0530
+
+    login commit
+
+commit 3b45d6ebb82a9fc8190e0fb2476907b58d42a9de
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 01:28:46 2023 +0530
+
+    fourth commit
+
+commit a68aff43885c33dcc39ab32c7dfec7a211baeb3d
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 01:02:12 2023 +0530
+
+    third commit
+
+commit c0733f77f089d76cd9bea6e2fc8fb2fc5eb388cb
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 00:53:03 2023 +0530
+
+    second commit
+
+commit c403c47a824686f4207db585d046c802b9cf92bd
+Author: Dineshbhatlawande <113224672+Dineshbhatlawande@users.noreply.github.com>
+Date:   Tue Apr 11 00:36:39 2023 +0530
+
+    Create README.md
+
+    second commit
+
+commit e7a70e612896910df7171ae0d29db8301c8a09e5
+Author: Dineshbhatlawande <dinesh766654@gmail.com>
+Date:   Tue Apr 11 00:25:29 2023 +0530
+
+ 
+
